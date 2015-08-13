@@ -1,0 +1,72 @@
+/***************************************************************
+ * Copyright notice
+ *
+ * (c) 2004 macmade.net
+ * All rights reserved
+ *
+ * This script is part of the TYPO3 project. The TYPO3 project is 
+  * free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * The GNU General Public License can be found at
+ * http://www.gnu.org/copyleft/gpl.html.
+ *
+ * This script is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * This copyright notice MUST APPEAR in all copies of the script!
+ ***************************************************************/
+
+/**
+ * Default TS constants - Extension 'Flash Video Player'
+ *
+ * @author		Jean-David Gadina (macmade@gadlab.net)
+ * @version		1.0
+ */
+
+/**
+ * PI1 object - FLV Player
+ */
+
+plugin.tx_flvplayer_pi1 {
+	
+	# cat=flvplayer/enable/1; type=string; label=Loop: Loop the Flash animation (Flash object parameter).
+	swfParams.loop = false
+	
+	# cat=flvplayer/enable/2; type=string; label=Menu: Allow the Flash menu to be displayed in the animation (Flash object parameter).
+	swfParams.menu = false
+	
+	# cat=flvplayer/enable/3; type=string; label=SWLiveConnect: Enable the use of LiveConnect (Flash object parameter).
+	swfParams.swliveconnect = false
+	
+	# cat=flvplayer/enable/4; type=boolean; label=Auto start: Automatically start playing songs when the player is loaded.
+	playerParams.autoStart = 1
+	
+	# cat=flvplayer/enable/5; type=boolean; label=Fullscreen: Allow fullscreen play.
+	playerParams.fullScreen = 1
+	
+	# cat=flvplayer/dims/0; type=int+; label=Width: Control the width of the header (used for both the swf file and the replacement picture).
+	width = 600
+	
+	# cat=flvplayer/dims/1; type=int+; label=Height: Control the height of the header (used for both the swf file and the replacement picture).
+	height = 450
+	
+	# cat=flvplayer/dims/2; type=string; label=Scale: The scale of the Flash animation (Flash object parameter).
+	swfParams.scale = noscale
+	
+	# cat=flvplayer/file/0; type=string; label=FLV player: The SWF file containing the FLV player.
+	flvplayer = EXT:flvplayer/pi1/flvplayer.swf
+	
+	# cat=flvplayer/color/0; type=color; label=BGColor: The background color of the Flash animation.
+	swfParams.bgcolor = #FFFFFF
+	
+	# cat=flvplayer//0; type=int+; label=Flash version: The version of the Flash plugin required to view the headers.
+	version = 6
+	
+	# cat=flvplayer//1; type=string; label=Quality: The quality of the Flash animation (Flash object parameter).
+	swfParams.quality = best
+}

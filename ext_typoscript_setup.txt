@@ -1,0 +1,87 @@
+/***************************************************************
+ * Copyright notice
+ *
+ * (c) 2004 macmade.net
+ * All rights reserved
+ *
+ * This script is part of the TYPO3 project. The TYPO3 project is 
+  * free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * The GNU General Public License can be found at
+ * http://www.gnu.org/copyleft/gpl.html.
+ *
+ * This script is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * This copyright notice MUST APPEAR in all copies of the script!
+ ***************************************************************/
+
+/**
+ * Default TS setup - Extension 'Flash Video Player'
+ *
+ * @author		Jean-David Gadina (macmade@gadlab.net)
+ * @version		1.0
+ */
+
+/**
+ * PI1 object - FLV Player
+ */
+
+plugin.tx_flvplayer_pi1 {
+	
+	// Header width
+	width = {$plugin.tx_flvplayer_pi1.width}
+	
+	// Default swf file
+	height = {$plugin.tx_flvplayer_pi1.height}
+	
+	// Header height
+	flvplayer = {$plugin.tx_flvplayer_pi1.flvplayer}
+
+	// Flash version
+	version = {$plugin.tx_flvplayer_pi1.version}
+	
+	// Flash object parameters
+	swfParams {
+		
+		// Loop animation
+		loop = {$plugin.tx_flvplayer_pi1.swfParams.loop}
+		
+		// Display menu
+		menu = {$plugin.tx_flvplayer_pi1.swfParams.menu}
+		
+		// Animation quality
+		quality = {$plugin.tx_flvplayer_pi1.swfParams.quality}
+		
+		// Scale animation
+		scale = {$plugin.tx_flvplayer_pi1.swfParams.scale}
+		
+		// Anmimation background color
+		bgcolor = {$plugin.tx_flvplayer_pi1.swfParams.bgcolor}
+		
+		// Live connect
+		swliveconnect = {$plugin.tx_flvplayer_pi1.swfParams.swliveconnect}
+	}
+
+	// Player parameters
+	playerParams {
+		
+		// Allow fullscreen
+		fullScreen = {$plugin.tx_flvplayer_pi1.playerParams.fullScreen}
+		
+		// Auto start
+		autoStart = {$plugin.tx_flvplayer_pi1.playerParams.autoStart}
+	}
+	
+	// Default CSS styling
+	_CSS_DEFAULT_STYLE (
+		.tx-flvplayer-pi1 {
+			text-align: center;
+		}
+	)
+}
